@@ -1,3 +1,5 @@
+import 'package:myaiapp/home_page.dart';
+import 'package:myaiapp/pallete.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,30 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'My F',
+      title: 'AI Assistant',
       theme: ThemeData.light(useMaterial3: true).copyWith(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Pallete.whiteColor,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
+          backgroundColor: Pallete.whiteColor,
         ),
       ),
       home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('body')),
     );
   }
 }
